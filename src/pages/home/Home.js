@@ -5,7 +5,6 @@ import { Table, FormControl, InputGroup } from "react-bootstrap";
 import RefreshIcon from "@material-ui/icons/Refresh";
 import Divider from "@material-ui/core/Divider";
 import "../../css/dashboard.css";
-import axios from "axios";
 
 import Nav from "./../../reusables/Nav";
 
@@ -234,9 +233,9 @@ class Home extends Component {
           </thead>
           <tbody>
             {this.state.filtered.length
-              ? this.state.filtered.map((book) => {
+              ? this.state.filtered.map((book, index) => {
                   return (
-                    <tr>
+                    <tr key={index}>
                       <td>{book.sn}</td>
                       <td>{book.subject}</td>
                       <td>{book.title}</td>
@@ -249,9 +248,9 @@ class Home extends Component {
                   );
                 })
               : this.state.books && this.state.books.length
-              ? this.state.books.map((book) => {
+              ? this.state.books.map((book, index) => {
                   return (
-                    <tr>
+                    <tr key={index}>
                       <td>{book.sn}</td>
                       <td>{book.subject}</td>
                       <td>{book.title}</td>

@@ -1,18 +1,7 @@
 import { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-import {
-  AppBar,
-  Drawer,
-  Hidden,
-  List,
-  Toolbar,
-  Typography,
-  makeStyles,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-} from "@material-ui/core";
+import { AppBar, List, Typography } from "@material-ui/core";
 
 class Nav extends Component {
   constructor(props) {
@@ -29,7 +18,7 @@ class Nav extends Component {
           flexFlow: "row",
           padding: "0.5rem 2rem",
         }}
-        elevation="3"
+        elevation={3}
       >
         <Typography variant="h6" style={{ color: "#222" }}>
           Gh Registered Books

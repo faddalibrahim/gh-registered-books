@@ -1,0 +1,25 @@
+
+#books-table-header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#booking-table-header div {
+  cursor: pointer;
+  margin-top: 5px;
+}
+#booking-table-header h3 {
+  color: grey;
+  font-weight: bold;
+}
+
+#surface {
+  margin-top: 3rem;
+  padding-bottom: 5px;
+}
+
+#whole-table{
+    overflow-y: auto !important;
+    /* flex-grow: 1; */
+}

@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -36,3 +39,20 @@
     transform: rotate(360deg);
   }
 }
+
+#dashboard{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+}
+
+#whole-table{
+  flex-grow: 1;
+}
+
+.MuiAppBar-positionFixed{
+  position: unset !important;
+}
+
+
